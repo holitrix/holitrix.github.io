@@ -1,4 +1,4 @@
-#myInput {
+#charinput {
   background-image: url('/css/searchicon.png'); /* Add a search icon to input */
   background-position: 10px 12px; /* Position the search icon */
   background-repeat: no-repeat; /* Do not repeat the icon image */
@@ -9,14 +9,28 @@
   margin-bottom: 12px; /* Add some space below the input */
 }
 
-#myUL {
+#charlist {
   /* Remove default list styling */
   list-style-type: none;
   padding: 0;
   margin: 0;
+  width: 100%;
 }
 
-#myUL li a {
+#charlist li {
+    width: 25%;
+    min-height: 100px;
+    border: 1px solid #000;
+    display: -moz-inline-stack;
+    display: inline-block;
+    vertical-align: top;
+    margin: 5px;
+    zoom: 1;
+    *display: inline;
+    _height: 250px;
+}
+
+#charlist li a {
   border: 1px solid #ddd; /* Add a border to all links */
   margin-top: -1px; /* Prevent double borders */
   background-color: #f6f6f6; /* Grey background color */
@@ -27,6 +41,6 @@
   display: block; /* Make it into a block element to fill the whole list */
 }
 
-#myUL li a:hover:not(.header) {
+#charlist li a:hover:not(.header) {
   background-color: #eee; /* Add a hover effect to all links, except for headers */
 }
