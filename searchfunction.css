@@ -17,30 +17,26 @@
   width: 100%;
 }
 
-#charlist li {
-    width: 25%;
-    min-height: 100px;
-    border: 1px solid #000;
-    display: -moz-inline-stack;
-    display: inline-block;
-    vertical-align: top;
-    margin: 5px;
-    zoom: 1;
-    *display: inline;
-    _height: 250px;
+#charlist li{
+  padding: 10px;
 }
 
 #charlist li a {
-  border: 1px solid #ddd; /* Add a border to all links */
-  margin-top: -1px; /* Prevent double borders */
-  background-color: #f6f6f6; /* Grey background color */
+/*  background-color: #f6f6f6; */
   padding: 12px; /* Add some padding */
   text-decoration: none; /* Remove default text underline */
   font-size: 18px; /* Increase the font-size */
-  color: black; /* Add a black text color */
+  text-align: center;
+  color: white; /* Add a black text color */
+  opacity: 0.6;
   display: block; /* Make it into a block element to fill the whole list */
 }
 
+.character-icon {
+  width: 100%;
+  opacity: 1;
+}
+
 #charlist li a:hover:not(.header) {
-  background-color: #eee; /* Add a hover effect to all links, except for headers */
+  opacity: 1; /* Add a hover effect to all links, except for headers */
 }
